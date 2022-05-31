@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you reference any resources from this repository, please cite it as below."
+authors:
+- family-names: "Quach"
+  given-names: "Keven"
+title: "Mapping-Research-Software-Landscapes-through-Exploratory-Studies-of-GitHub-Data"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-05-31
+url: "https://github.com/kequach/Mapping-Research-Software-Landscapes-through-Exploratory-Studies-of-GitHub-Data"
