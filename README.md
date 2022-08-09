@@ -1,6 +1,10 @@
 # Mapping Research Software Landscapes through Exploratory Studies of GitHub Data
 
-This repo holds the code for my master thesis with the topic **Mapping Research Software Landscapes through Exploratory Studies of GitHub Data**. 
+This repo holds the code, latex files, and instructions for my master thesis with the topic **Mapping Research Software Landscapes through Exploratory Studies of GitHub Data**. 
+
+## Prerequisites 
+
+Please refer to the [SWORDS-UU](https://github.com/UtrechtUniversity/SWORDS-UU) framework for necessary prerequisites. For this study, you will need some basic familiarity with Python and Jupyter Notebooks.
 
 ## Reproducing data retrieval
 
@@ -13,3 +17,12 @@ The data retrieval is based on the [SWORDS-UU](https://github.com/UtrechtUnivers
 * Execute the last part after the title **Label repositories with faculty information** of the Jupyter Notebook [label_data.ipynb](/label_data.ipynb). This will annotate each repository with the corresponding faculty of the user. The resulting file can be found in this repository under [data/repositories_labeled_faculty.xlsx](/data/repositories_labeled_faculty.xlsx). This is also the fully labeled file.
 
 * Next steps TBD
+
+
+## Contact
+
+In case of questions, don't hesitate to reach out! You can find more information on how to contact me on [my GitHub profile](https://github.com/kequach).
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
