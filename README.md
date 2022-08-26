@@ -19,7 +19,7 @@ The data retrieval is based on the [SWORDS-UU](https://github.com/UtrechtUnivers
 
 This completes the data retrieval. The next step is to analyze the gathered data. All relevant code for analysis can be found in this repository.
 
-## Analysis
+## Reproducing Analysis
 
 - If the data is made available through the previously described steps, you can simply run the Jupyter Notebook [2_analysis.ipynb](/2_analysis.ipynb) from top to bottom. Further detailed information is provided in the file.
 
