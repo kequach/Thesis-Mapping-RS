@@ -1,0 +1,49 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass{Dissertate}
+
+
+\include{chapters/0_acronyms}
+
+\begin{document}
+% the front matter
+\input{frontmatter/personalize}
+% \maketitle
+% \copyrightpage
+\frontmatter
+\setstretch{\dnormalspacing}
+% \abstractpage
+% \tableofcontents
+% %\authorlist
+% \listoffigures
+% \dedicationpage
+% \acknowledgments
+
+% \doublespacing
+
+% include each chapter...
+% \setcounter{chapter}{-1}  % start chapter numbering at 0
+
+\include{chapters/1_introduction}
+\include{chapters/2_literature}
+\include{chapters/3_researchmethod}
+\include{chapters/4_results}
+\include{chapters/5_discussion}
+\include{chapters/6_conclusion}
+
+\setstretch{\dnormalspacing}
+
+
+% the back matter
+\backmatter
+
+% \clearpage
+% \bibliography{references}
+% \addcontentsline{toc}{chapter}{References}
+% \bibliographystyle{apalike2}
+
+% \include{endmatter/colophon}
+
+\end{document}

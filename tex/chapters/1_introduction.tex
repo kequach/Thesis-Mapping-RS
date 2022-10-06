@@ -1,0 +1,37 @@
+%!TEX root = ../dissertation.tex
+\chapter{Introduction}
+\label{chap:intro}
+Data and research software play a vital role in modern research, enabling scientific breakthroughs like capturing a black hole as an image \cite{anzt_environment_2021, katz_overlap_2022}, storing massive datasets on distributed systems \cite{shvachko_hadoop_2010}, or the open-source publication of a system for large-scale machine learning, which allows everyone to solve computer vision tasks, among many other things \cite{TensorFlow}. However, not much is known about the landscape of research software, which researchers and support staff create, and scientific results may not be reproducible or valid \cite{allison_reproducibility_2016}. Relevant information is scattered across different platforms like GitHub, PapersWithCode.com, employee pages and more. Some entities require researchers to follow strict publishing guidelines to solve these issues, and some initiatives try to gather research software in a system like the research software directory \cite{spaaks_research_2020}, which was developed by the Netherlands eScience Center and can be implemented for different scopes. However, a deeper analysis of such data to infer actionable recommendations for \acrfull{rse} practice has not been conducted yet.
+
+
+This research project aims to develop a method for conducting exploratory data analyses of GitHub data, which is transferable to other organizations and thus contributes to the scientific community. GitHub is the most popular development platform in research and is the go-to reference for mining open source repositories \cite{cosentino_systematic_2017}. This method is then applied to data from \acrfull{uu} only to maintain feasibility but can be applied to other use cases such as comparisons between universities or other organizations. The data used for the project is  collected using the \acrfull{swordsuu} framework \cite{de_Bruin_Scan_and_revieW_2021}, which was initiated by Anna-Lena Lamprecht and Jonathan de Bruin to get insights into how \acrshort{uu} researchers develop, manage and publish software.
+
+
+
+\section{Relevance}
+This research is highly relevant for both the academic and non-academic worlds of software engineering, while the main focus lies in academia. 
+This research output can allow an organization to make data-based strategic decisions, for example, regarding software openness and sustainability. Support staff can use the insights to craft specialized trainings as knowledge gaps and needs might differ per faculty or department. This will also help improve researchers' assistance in achieving publications and research software that are more \acrfull{fair}. Therefore, the output of this work supports the application of \acrshort{fair} principles for research software which helps to improve the research software landscape. The proposed method is also publicly available so that other organizations can adopt it for their own purposes.
+
+In addition, the \acrshort{fair} principles share some ideas with \acrfull{foss} objectives, which is also highly relevant for non-academic software engineering since much software is built upon other \acrshort{foss} software \cite{lamprecht_towards_2020}. An overwhelming majority of software source code originates from the non-academic world, namely industry and developer communities \cite{research_data_allianceforce11_software_source_code_identification_wg_use_2020}. Thus, support for applying \acrshort{fair} principles is also relevant for non-academic practice. In fact, there are many initiatives and organisations embedded within the industry that aim to develop \acrshort{foss} software, such as the Eclipse Foundation, Open Manufacturing Platform, and Catena-X. 
+
+
+\section{Research question}
+This study aims to answer the following research question: 
+\begin{itemize}
+    \item How can information about open source publications on GitHub be used to infer actionable recommendations for \acrshort{rse} practice to improve the research software landscape of an organization? 
+\end{itemize}
+The main research question will be answered with the help of the following subquestions:
+\begin{enumerate}
+  \item What is the current state of the art of \acrshort{fair} principles?
+  \item How can FAIR principles be supplemented with additional variables?  
+  \item Are there different characteristics for different subpopulations\footnote{Subpopulations refer to grouping levels like faculties, departments and positions (e.g. PhD candidate, associate professor), while the population refers to all identified employees.} in the data?
+  \item How can the application of FAIR variables for research software be supported?
+  \item How well can we identify research software with available data?
+\end{enumerate}
+As stated in subquestion 2, the need for measurable variables becomes evident when one aims to better understand research software FAIRness in quantitative terms. There is currently only one study available that proposes a first FAIR-like framework to measure software quality, but it does not apply to data only from GitHub and focuses on a single domain \cite{pico_fairsoft_2022}. Subquestions 2 and 4 should also be contemplated for the different subpopulations as this, for example, enables the crafting of the aforementioned specialized trainings. Answering these questions will help to gain a better understanding of a research software landscape, and what differences exist for the different subpopulations.
+
+Subquestions 1 and 2 are answered through a literature review. Subquestion 2 will additionally be validated through a similarity analysis. The other subquestions will be answered through the exploratory data analysis and classification, which are explained in more detail in \autoref{sec:dataexplore}
+
+
+\section{Thesis outline}
+This study continues with the literature review and necessary background information in \autoref{chap:literature}. In \autoref{chap:method}, the research method and planning of the study are presented. \autoref{chap:results} shows the results of the analysis that are then discussed in \autoref{chap:discussion}, followed by the conclusion in \autoref{chap:conclusion}.
