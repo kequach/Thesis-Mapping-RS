@@ -10,7 +10,7 @@ This Chapter explains the necessary background knowledge in \autoref{sec:bgknow}
 This is usually done by \textit{forking} a repository, which essentially means cloning. Afterwards, the contributor \textit{commits} and \textit{pushes} changes on the forked repository and \textit{merges} the changes to the original one via pull requests. It also offers the opportunity to follow people to get notified about their activity.
 GitHub also offers many other features for free, like \textit{GitHub Actions}, which allows for integrated \acrfull{cicd} pipelines, and automatic detection of citation and license files, leading to machine-readable metadata. There is also a \textit{REST API} \cite{github_rest} which allows us to extract information about users and repositories with all accompanying metadata that is available. Such REST APIs use the HTTP protocol to receive and modify data. To make things easier, we use ghapi \cite{noauthor_ghapi_nodate} in the \acrshort{swordsuu} framework, a Python wrapper for the GitHub REST API.
 
-% explain difference metric / variable / FAIR variable
+
 In the remainder of the thesis, we will use the terms \textit{metric} and \textit{(\acrshort{fair}) variable}. A variable is any kind of captured data like the owner of the repository or the repository id. A \acrshort{fair} variable is related to concepts of FAIRness, openness, and sustainability. Examples of \acrshort{fair} variables are the availability of a license or citation information. A \textit{metric} is any kind of numeric variable like the number of issues, forks or stargazers. A metric is always a variable and can also be a \acrshort{fair} variable, but a (\acrshort{fair}) variable does not always have to be a metric.
 
 The \acrfull{fair4rs}-subgroup3 reviewed definitions of research software and provided their own definition, which will be used for the remainder of the study \cite{gruenpeter_defining_2021}:
@@ -63,7 +63,6 @@ The \acrfull{fair4rswg} is well-positioned to be the community forum regarding \
     \item Definition of research software to provide context \cite{gruenpeter_defining_2021}. This definition is used throughout the study.
     \item Review of new research related to \acrshort{fair} Software since the release of the paper “Towards \acrshort{fair} principles for research software”, as well as the paper itself \cite{lamprecht_towards_2020, wg_fair4rs_2021, chue_hong_what_2021}. 
 \end{enumerate}
-% The results of the subgroups’ work were discussed by Katz et al. \cite{katz_fair4rs_2021-1}, which included a community consultation. A summary of the findings follows in \autoref{sec:lit:fair4rs}.
 Three additional subgroups were launched afterwards in September 2021 \cite{chue_hong_fair4rs_2022} to review adoption guidelines for \acrshort{fair4rs} principles \cite{martinez_survey_2022}, (early) adoption support \cite{martinez-ortiz_fair4rs_2022}, and governance \cite{honeyman_subgroup_nodate}.  
 There are also related initiatives whose main focus does not lie on \acrshort{fair} research software. However, since \acrshort{fair} research software is related to \acrshort{fair} data, they also contributed to this subject:
 \begin{itemize}

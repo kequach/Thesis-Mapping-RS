@@ -52,8 +52,6 @@ Automatic labelling based on provided GitHub metadata and information from the e
 \label{fig:phase1-results}}
 \end{figure}
 
-% TODO Note: It would be a possible improvement to parse the mail in addition to name as most mails are based on either a firstname.lastname or lastname.firstname schema
-
 \newpage
 \subsection{Repository collection}
 
@@ -172,8 +170,6 @@ Life span (in days) & Life span refers to the time between the first and last co
 }
 
 
-\vspace{-.25cm}
-% \newpage
 \section{Data analysis}
 \label{sec:dataexplore}
 To validate subquestion 2, we looked at the Jaccard similarity coefficient \cite{kosub_note_2016} of the howfairis and new \acrshort{fair} variables derived from literature and their percentages for research and non-research software. 
@@ -184,8 +180,6 @@ For subquestion 3, we additionally conducted multiple univariate Kruskal-Wallis 
 The Kruskal-Wallis test represents the non-parametric alternative for one-way \acrfull{anova}. 
 An \acrshort{anova} tests equality of means, while a Kruskal-Wallis test compares mean ranks. It is a more general test and less powerful. However, \acrshort{anova} assumes normal-distribution, which our variables do not fulfill. The Dunn’s test compares the mean of each group pairwise and calculates which groups are significantly different.
 An alternative approach would be to use a non-parametric multivariate analysis of variance, of which multiple methods exist \cite{anderson_new_2001, katz_multivariate_1980}. There are different justifications for choosing either approach, and they address different research questions \cite{huberty_multivariate_1989}. Some drawbacks are that multiple univariate tests ignore the increased precision of pooled variance estimates, decreasing inference reliability, and the estimation of the correlated error structure, which a multivariate model takes into account \cite{alexis_answer_2015}. However, as it is of interest to us in which metrics the differences exist, a multiple univariate approach is more applicable. Huberty and Morris \cite{huberty_multivariate_1989} also mention that multiple univariate analysis is applicable for exploratory research.
-% Ordering of variables would require taking intercorrelation into account 
-% degrees of freedom
 
 Subquestion 5 was answered with the help of two machine learning model classifications: \textit{logistic lasso regression} and \textit{random forest}. These were trained and tested on 80\% and 20\% of the data, respectively. The models included all metrics and \acrshort{fair} variables. Metrics were scaled to values between zero and one. This allowed us to draw comparisons between variables from the logistic regression coefficients, as all variables are now on the same scale. We used the Python package scikit-learn \cite{scikit-learn} for this part of the analysis.
 For describing the models, we will use the term \textit{features} for independent variables and \textit{class} for the categorization of whether a repository is considered research software or not.
@@ -211,7 +205,6 @@ The random forest model had two hyperparameters that were considered for grid se
 \newpage
 \section{Validity}
 \label{sec:valid}
-% 	Validity: Threats are search process and selection criteria, focus only on gitHub; Dataset size
 There were several threats concerning the study. 
 Contributions to research software that \acrshort{uu}-affiliated users do not own are not captured. This means we could not capture if a researcher would contribute to existing open research software. 
 The user search process may be flawed, resulting in a biased capture of \acrshort{uu} employees. 
