@@ -1,4 +1,5 @@
 # Mapping Research Software Landscapes through Exploratory Studies of GitHub Data
+[![DOI](https://zenodo.org/badge/460933328.svg)](https://zenodo.org/badge/latestdoi/460933328)
 
 This repo holds the code, latex files, and instructions for my master thesis with the topic **Mapping Research Software Landscapes through Exploratory Studies of GitHub Data**. 
 
